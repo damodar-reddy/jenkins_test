@@ -26,5 +26,11 @@ pipeline {
                 junit stdioRetention: '', testResults: 'api-gateway/target/surefire-reports/*.xml'
             }
         }
+
+         stage('print') {
+            steps {
+                echo "testing"
+            }
+        }
     }
 }
